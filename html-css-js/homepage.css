@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    background-image: url(/background/back_home_page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.img {
+    width: 40%;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+#slider {
+    text-align: center;
+}
