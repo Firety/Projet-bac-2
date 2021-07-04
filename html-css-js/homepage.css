@@ -8,6 +8,7 @@ body {
 
 .container {
     background-color: white;
+    opacity: 0.8;
 }
 
 .flex {
@@ -16,11 +17,8 @@ body {
 
 .img {
     width: 40%;
-    text-align: center;
-}
-
-main {
-    text-align: center;
+    margin-top: 10%;
+    border-radius: 50px;
 }
 
 #slider {
