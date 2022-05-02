@@ -1,0 +1,36 @@
+body {
+    background-image: linear-gradient(white, #ff0088);
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 350px !important;
+}
+
+.centre {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+}
+
+td,
+th {
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 950px) {
+    img {
+        width: 250px !important;
+    }
+    table {
+        width: auto !important;
+    }
+    td {
+        font-size: medium !important;
+    }
+}

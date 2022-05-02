@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../admin/characters.css">
+    <title>Modifications des personnages</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1 class="centre">Modifications des personnages</h1>
+    <form class="centre">
+        <fieldset>
+            <div>
+                <input type="text" id="id_character" hidden>
+            </div>
+            <br>
+            <div>
+                <p>Nom :</p>
+                <input type="text" id="lastname">
+            </div>
+            <br>
+            <div>
+                <p>Prenom :</p>
+                <input type="text" id="firstname">
+            </div>
+            <br>
+            <div>
+                <p>Surnom :</p>
+                <input type="text" id="nickname">
+            </div>
+            <br>
+            <div>
+                <p>Anniversaire :</p>
+                <input type="text" id="birthday">
+            </div>
+            <br>
+            <div>
+                <p>Age :</p>
+                <input type="text" id="age">
+            </div>
+            <br>
+            <div>
+                <p>Taille :</p>
+                <input type="text" id="height">
+            </div>
+            <br>
+            <div>
+                <p>Audio :</p>
+                <input type="text" id="audio">
+            </div>
+            <br>
+            <div>
+                <p>Race :</p>
+                <select name="" id="race"></select>
+            </div>
+            <div>
+                <p>Manga :</p>
+                <select name="" id="manga"></select>
+            </div>
+            <div>
+                <p>Image :</p>
+                <input type="text" id="picture">
+            </div>
+            <br>
+            <div>
+                <p>Description :</p>
+                <textarea name="" id="desc" cols="30" rows="20"></textarea>
+            </div>
+            <br>
+            <input type="submit" value="Ajouter le personnage">
+            <input type="button" id="cancelUpdate" value="Annuler">
+            <p>Retourner à la <a href="../admin/adm_home_page.html">page d'accueil</a></p>
+        </fieldset>
+    </form>
+
+    <p id="error"></p>
+
+    <br>
+
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Surnom</th>
+            <th>Anniversaire</th>
+            <th>Age</th>
+            <th>Taille</th>
+            <th>Voix</th>
+            <th>Race</th>
+            <th>Manga</th>
+            <th>Image</th>
+            <th>Description</th>
+            <th>Modifier</th>
+            <th>Supprimer</th>
+        </tr>
+    </table>
+</body>
+<script src="../admin/characters.js"></script>
+
+</html>

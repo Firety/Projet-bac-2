@@ -1,0 +1,7 @@
+weapon.id_Weapon
+weapon.name
+ajouter un id en dynamique
+faire un foreach pour parcourir le tableau ou tu check les id
+weapon_character.forEach(w => {
+	$("#check-" + w.id).prop("checked", true);
+})

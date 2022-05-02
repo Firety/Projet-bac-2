@@ -32,7 +32,9 @@ $("#register").click((e) => {
             success: (res, status) => {
                 if (res.success) {
                     alert("Tu es inscrit, bienvenue!!")
-                } else alert(res.msg);
+                    window.location.replace("../html-css-js/connection.html")
+                } else alert("tout les champs n'ont pas été renseignés");
+
             }
         })
     }

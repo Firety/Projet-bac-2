@@ -7,8 +7,8 @@ body {
 }
 
 .container {
-    background-color: white;
-    opacity: 0.8;
+    background-image: linear-gradient(white, hsl(214, 100%, 50%));
+    opacity: 1;
 }
 
 .flex {
@@ -18,7 +18,7 @@ body {
 .img {
     width: 40%;
     margin-top: 10%;
-    border-radius: 50px;
+    transition: 0.3s;
 }
 
 #slider {
@@ -56,7 +56,7 @@ aside {
     top: 0;
     height: 100vh;
     z-index: 50;
-    background: white;
+    background-image: linear-gradient(to right top, #00f2d2, #56f6ff, #abf5ff, #e6f6ff, #ffffff);
     padding: 40px;
     transform: translate3d(-100%, 0, 0);
     transition: all 300ms ease-in-out;

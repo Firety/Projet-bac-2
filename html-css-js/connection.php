@@ -9,14 +9,14 @@ if (!isset($_POST['log'], $_POST['pwd'])) {
     die();
 }
 
-$res = $db->query("SELECT id_User, passwd, last_name, first_name FROM users WHERE login = '{$_POST['log']}'");
+$res = $pdo->query("SELECT id_User, passwd, last_name, first_name, admin FROM users WHERE login = '{$_POST['log']}'");
 $user = resultAsArray($res)[0];
 
 if (password_verify($_POST['pwd'], $user['passwd'])) {
     $_SESSION['connected'] = true;
     $_SESSION['id_user'] = $user['id_User'];
 
-    echo json_encode(['success' => true, 'user' => ['last_name' => $user['last_name'], 'first_name' => $user['first_name']]]);
+    echo json_encode(['success' => true, 'user' => ['last_name' => $user['last_name'], 'first_name' => $user['first_name'], 'admin' => $user['admin']]]);
 } else {
     echo json_encode(['success' => false]);
 }

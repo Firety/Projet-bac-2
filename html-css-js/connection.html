@@ -5,28 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="connection.css">
     <title>Connexion</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <h1>Content de te revoir champion</h1>
-    <form>
-        <fieldset>
-            <div>
-                <p>Login :</p>
-                <input type="text" id="">
-            </div>
-            <br>
-            <div>
-                <p>Mot de passe :</p>
-                <input type="text" id="">
-            </div>
-            <br>
-            <input type="submit" id="register" value="Se connecter">
-            <br>
-            <p>Vous n'êtes pas encore inscrit, <a href="register.html">inscrivez-vous</a> </p>
-        </fieldset>
-    </form>
+    <header>
+        <h1 class="centre">Connecte toi ici !</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <div>
+                    <p>Login :</p>
+                    <input type="text" id="log">
+                </div>
+                <br>
+                <div>
+                    <p>Mot de passe :</p>
+                    <input type="password" id="pwd">
+                </div>
+
+
+                <br>
+                <input type="submit" id="connection" value="Se connecter">
+                <br>
+                <p>Vous n'êtes pas encore inscrit, <a href="register.html">inscrivez-vous</a> </p>
+                <p>Retourner à la <a href="homepage.html">page d'accueil</a></p>
+            </fieldset>
+        </form>
+    </main>
 </body>
+<script src="../html-css-js/connection.js"></script>
 
 </html>

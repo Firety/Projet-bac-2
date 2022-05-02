@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/background/back_character_page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Teko', sans-serif;
+}
+
+.container {
+    background-image: linear-gradient(to right top, #00f2d2, #56f6ff, #abf5ff, #e6f6ff, #ffffff);
+}
+
+.centre {
+    text-align: center;
+}
+
+img {
+    border-radius: 50px;
+    width: 35%;
+}
+
+table {
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid black;
+}
+
+audio {
+    width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@media screen and (max-width: 950px) {
+    body {
+        width: auto;
+    }
+    img {
+        border-radius: 15px !important;
+    }
+    .container {
+        margin-left: 0%;
+        margin-right: 30%;
+    }
+    audio {
+        width: 150px;
+    }
+}

@@ -1,14 +1,18 @@
 body {
     margin: 0;
-    background-image: url(/background/back_home_page.jpg);
+    padding: 0;
+    background-image: url(../assets/background/back_home_page.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: transparent;
+    height: 140vh;
+    font-family: fantasy;
 }
 
 .container {
-    background-color: white;
-    opacity: 0.8;
+    background-image: linear-gradient(to right top, #00f2d2, #56f6ff, #abf5ff, #e6f6ff, #ffffff);
+    opacity: 1;
+    height: 140vh;
 }
 
 .flex {
@@ -21,6 +25,44 @@ body {
     border-radius: 50px;
 }
 
-#slider {
+.centre {
     text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: red;
+}
+
+td,
+th {
+    border: 1px solid black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@media screen and (max-width: 950px) {
+    * {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    header,
+    main {
+        width: auto !important;
+    }
+    h2 {
+        font-size: small !important;
+    }
+    body {
+        background-image: url(../assets/background/fond.jpg) !important;
+        width: auto;
+    }
+    .container {
+        padding-left: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .img {
+        border-radius: 15px !important;
+    }
 }

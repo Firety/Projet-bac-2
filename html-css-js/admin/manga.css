@@ -1,0 +1,17 @@
+.centre {
+    text-align: center;
+}
+
+img {
+    width: 350px !important;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+}
+
+td,
+th {
+    border: 1px solid black;
+}

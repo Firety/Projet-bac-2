@@ -1,0 +1,49 @@
+body {
+    margin: 0%;
+    background-image: url(../assets/background/back_character_page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.centre {
+    text-align: center;
+}
+
+.bloc {
+    background-color: transparent;
+    text-align: center;
+    margin-right: 2%;
+    margin-left: 3%;
+}
+
+h1 {
+    color: gold;
+}
+
+section {
+    width: auto;
+    display: flex;
+}
+
+img {
+    opacity: 0.5;
+    width: 500px;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 950px) {
+    img {
+        width: 300px !important;
+    }
+}

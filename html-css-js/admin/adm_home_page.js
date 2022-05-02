@@ -35,3 +35,25 @@ $('button').click(() => {
 $('#overlay').click(() => {
     $('aside, #overlay').removeClass('open');
 })
+
+$('#disconnection').click((e) => {
+    e.preventDefault();
+    $.ajax({
+        url: "disconnection.php",
+        type: "GET",
+        data: {
+
+        },
+        dataType: "json",
+        success: (res, status) => {
+            if (res.success) {
+                localStorage.removeItem('user');
+                window.location.replace("../homepage.html")
+            } else alert("erreur")
+        }
+    })
+})
+
+if (localStorage.getItem('user')) {
+    $('#disconnection').show();
+} else $('#disconnection').hide();

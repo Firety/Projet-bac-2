@@ -1,0 +1,4 @@
+recuperer les elements dans le formulaire
+identifier chaque checkbox unique
+type de la donnée
+différencier les checkboxes (les donner un id)
